@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+<meta charset="UTF-8">
+<meta name="vieport" content=width=device-width,initial->
+<title >formulaire avocalix</title>
+<link rel="stylesheet" href="style/style.css">
+    </head>
+
+<body>
+    <header>
+<nav class="ui menu">
+    <div class="ui container">
+    <h1 class="header item">avocalix </h1>
+<a href="index.html" class="item"> acceul</a>
+</div>
+</nav>
+<SCRIPT LANGUAGE="javascript">
+    function controle(form1) {
+        let libellé = document.form1.libellé.value;
+        let  email = document.form1.email.value;
+        let  montan = document.form1.montan.value;
+        let  TVA=montan*20/100;
+        let total=parseFloat (montan)+parseFloat( TVA);
+    alert("libellé de prestation  : " + libellé
+    +"\n L’email du contact : " + email
+    +"\n  montan de la prestation =" +montan
+    +"\n  taux de TVA (20%) =" +  TVA
+    +"\n  le total =" + total
+    );
+
+    
+    }
+    </SCRIPT>
+    </header>
+     <main>
+<section>
+    <FORM NAME="form1">
+            
+                <div>
+                    <label for="name">libellé de prestation  :</label>
+                    <input type="text" id="name" name="libellé" VALUE="">
+                </div>
+                <div>
+                    <label for="mail">L’email du contact  :</label>
+                    <input type="email" id="mail" name="email" VALUE="">
+                </div>
+                <div>
+                    <label for="msg">montan de la prestation:</label>
+                    <input type="number" id="montan" name="montan"VALUE="">
+                </div>
+                 <div>
+                    <INPUT TYPE="button" NAME="bouton" VALUE="Contrôler" onClick="controle(form1)">
+                 </div>
+
+        
+        </FORM>
+</section>
+     </main>
+     <footer>
+<p>avocalix</p>
+     </footer>
+</body>
+</html>
